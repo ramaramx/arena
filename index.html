@@ -6,6 +6,7 @@
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
     <script src="simple-navmesh.js"></script>
     <script src="onload-camera.js"></script>
+    <script src="video.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.1/web3.min.js"></script>
     <script src="https://unpkg.com/super-hands@^3.0.3/dist/super-hands.min.js"></script>
     <script src="https://unpkg.com/aframe-look-at-component@0.8.x/dist/aframe-look-at-component.min.js"></script>
@@ -60,14 +61,22 @@
       ></a-entity>
       <a-sphere id="fakesun" material="emissive:#ffffff;emissiveIntensity:100;" position="0 20 0"></a-sphere>
 <!--       <a-box id="tvcube" material="emissive:#ffffff;emissiveIntensity:100;" position=".113 1.175 0"></a-box> -->
-
+      <a-entity 
+                  position="0 1.722 1.19821" 
+                  hide-on-play="#metaarena"
+                  text="align: center;
+                        width: 6;
+                        wrapCount: 100;
+                        color: black;
+                        value: Click or tap to start video"
+          ></a-entity>
       <a-assets timeout="1000">
         <a-asset-item id="arena" src="metaarena_fix.glb"></a-asset-item>
         <a-asset-item id="navmesh_building" src="navmesh_building.glb"></a-asset-item>
-        <video id="metaarena" autoplay loop="true" src="/assets/welcome-metarena.mp4"></video>
+        <video id="metaarena" loop="true" src="/assets/welcome-metarena.mp4"></video>
       </a-assets>
 
-      <a-video src="#metaarena" material="" geometry="" position="0 1.722 1.19821"></a-video>
+      <a-video src="#metaarena" play-on-click position="0 1.722 1.19821"></a-video>
       
 
     </a-scene>
