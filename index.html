@@ -60,15 +60,14 @@
       sound="src:url(/assets/sounds/metarena-audio.mp3);  autoplay:  true;  volume:  3;  poolSize:  3;  refDistance:  3;  rolloffFactor:  3;"
       ></a-entity>
       <a-sphere id="fakesun" material="emissive:#ffffff;emissiveIntensity:100;" position="0 20 0"></a-sphere>
-<!--       <a-box id="tvcube" material="emissive:#ffffff;emissiveIntensity:100;" position=".113 1.175 0"></a-box> -->
+      
       <a-entity 
-                  position="0 1.722 1.19821" 
-                  hide-on-play="#metaarena"
-                  text="align: center;
-                        width: 6;
-                        wrapCount: 100;
-                        color: black;
-                        value: Click or tap to start video"
+                  position="-0.53 1.755 6.584"
+                  rotation="0 90 0 "
+                  scale="1 1 0"
+                  geometry="primitive:  plane;  height:  0.3;  width:  1.2" 
+                  
+                  text="align:  center;  width:  6;  wrapCount:  100;  color:  #ffffff;  value:  Enter Meta Arena"
           ></a-entity>
       <a-assets timeout="1000">
         <a-asset-item id="arena" src="metaarena_fix.glb"></a-asset-item>
@@ -76,7 +75,10 @@
         <video id="metaarena" loop="true" src="/assets/welcome-metarena.mp4"></video>
       </a-assets>
 
-      <a-video src="#metaarena" play-on-click position="0 1.722 1.19821"></a-video>
+      <a-video src="#metaarena" play-on-click position="0.086 2.464 0.444" rotation="25 0 0" ></a-video>
+      <a-video src="#metaarena" play-on-click position="0.759 2.464 -0.167" rotation="25 90 0" ></a-video>
+      <a-video src="#metaarena" play-on-click position="0.114 2.464 -0.790" rotation="25 180 0" ></a-video>
+      <a-video src="#metaarena" play-on-click position="-0.432 2.464 -0.149" rotation="25 270 0" ></a-video>
       
 
     </a-scene>
