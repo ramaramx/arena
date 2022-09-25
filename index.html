@@ -24,7 +24,6 @@
   </head>
   <body>
     <a-scene id="mainScene"
-    extra-stats
              fog="color:#14001f; far:40;"
              loading-screen="dotsColor: purple; backgroundColor: black"
              renderer="
@@ -75,7 +74,7 @@
         <a-asset-item id="arena" src="metaarena_fix.glb"></a-asset-item>
         <a-asset-item id="navmesh_building" src="navmesh_building.glb"></a-asset-item>
         
-        <video id="metaarena" loop="true" src="/assets/welcome-metarena.mp4" rotation="0 0 180"></video>
+        <video id="metaarena" src="/assets/welcome-metarena.mp4" rotation="0 0 180"></video>
       </a-assets>
       
       <a-video src="#metaarena" position="0.086 2.470 0.395" play-on-click rotation="-25 180 0" scale="0.625 0.694 0.842" ></a-video>
