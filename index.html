@@ -62,20 +62,22 @@
       ></a-entity>
       <a-sphere id="fakesun" material="emissive:#ffffff;emissiveIntensity:100;" position="0 20 0"></a-sphere>
       
-      <a-entity 
-                  position="-0.53 1.755 6.584"
-                  rotation="0 90 0 "
-                  scale="1 1 0"
-                  geometry="primitive:  plane;  height:  0.14;  width:  0.7" 
-                  text="align:  center;  width:  6;  wrapCount:  100;  color:  #ffffff;  value:  Enter"
-          ></a-entity>
+      <a-image
+                  position="0.078 1.8 6.584"
+                  rotation="0 0 0 "
+                  scale="0.7 0.4 0.4"
+                  src="#enter-metaarena"
+                  hide-on-play ="#metaarena"
+          ></a-image>
 
       <a-assets timeout="1000">
         <a-asset-item id="arena" src="metaarena_fix.glb"></a-asset-item>
         <a-asset-item id="navmesh_building" src="navmesh_building.glb"></a-asset-item>
-        
-        <video id="metaarena" src="/assets/welcome-metarena.mp4" rotation="0 0 180"></video>
+        <img id="enter-metaarena" src="./assets/images/Enter-Metarena.png">
+        <video id="metaarena"  preload="auto" src="/assets/welcome-metarena.mp4" rotation="0 0 180"></video>
       </a-assets>
+
+      
       
       <a-video src="#metaarena" position="0.086 2.470 0.395" play-on-click rotation="-25 180 0" scale="0.625 0.694 0.842" ></a-video>
       <a-video src="#metaarena" position="0.634 2.470 -0.115" play-on-click rotation="-25 -90 0" scale="0.625 0.694 0.842" ></a-video>
